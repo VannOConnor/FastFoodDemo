@@ -31,5 +31,29 @@ namespace FastFoodDemo
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(guna2TextBox1.Text == "admin" || guna2TextBox2.Text == "admin")
+
+            {
+                this.Hide();
+                Form1 suksesLogin = new Form1();
+                suksesLogin.Show();
+            }else
+            {
+                MessageBox.Show("Username dan password anda salah");
+            }
+            if(guna2TextBox1.Text == "" || guna2TextBox2.Text == "")
+            {
+                MessageBox.Show("Username dan password tidak boleh kosong");
+            }
+        
+        }
+
+        private void guna2TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

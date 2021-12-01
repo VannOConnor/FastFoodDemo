@@ -43,7 +43,8 @@ namespace FastFoodDemo
 
         private void button13_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Form3 Exit = new Form3();
+            Exit.Show();
         }
 
         private void Form1_Load(object sender, EventArgs e)
